@@ -23,28 +23,31 @@ namespace GameExperiments.OpenTKExample
 	public sealed class MainWindow : GameWindow
 	{
 		/// <summary>
-		/// The window title.
+		///   The window title.
 		/// </summary>
 		private const string WindowTitle = "OpenGL";
 
 		/// <summary>
-		/// The program id.
+		///   The program id.
 		/// </summary>
 		private int program;
 
 		/// <summary>
-		/// The time ticker.
+		///   The time ticker.
 		/// </summary>
 		private double time;
 
 		/// <summary>
-		/// The vertex array.
+		///   The vertex array.
 		/// </summary>
 		private int vertexArray;
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="MainWindow"/> class.
+		///   Initializes a new instance of the <see cref="MainWindow"/> class.
 		/// </summary>
+		/// <param name="width">The window width.</param>
+		/// <param name="height">The window height.</param>
+		/// <param name="fullscreen">True if fullscreen mode should be used.</param>
 		public MainWindow(int width, int height, bool fullscreen)
 			: base(
 				width, // initial width
@@ -61,7 +64,7 @@ namespace GameExperiments.OpenTKExample
 		}
 
 		/// <summary>
-		/// The exit method.
+		///   The exit method.
 		/// </summary>
 		public override void Exit()
 		{
@@ -73,11 +76,9 @@ namespace GameExperiments.OpenTKExample
 		}
 
 		/// <summary>
-		/// The on load.
+		///   The on load.
 		/// </summary>
-		/// <param name="e">
-		/// The e.
-		/// </param>
+		/// <param name="e">The OnLoad event e.</param>
 		protected override void OnLoad(EventArgs e)
 		{
 			this.CursorVisible = true;
@@ -88,11 +89,9 @@ namespace GameExperiments.OpenTKExample
 		}
 
 		/// <summary>
-		/// The on render frame.
+		///   The on render frame.
 		/// </summary>
-		/// <param name="e">
-		/// The e.
-		/// </param>
+		/// <param name="e">The OnRenderFrame event e.</param>
 		protected override void OnRenderFrame(FrameEventArgs e)
 		{
 			this.time += e.Time;
@@ -122,33 +121,27 @@ namespace GameExperiments.OpenTKExample
 		}
 
 		/// <summary>
-		/// The on resize.
+		///   The on resize.
 		/// </summary>
-		/// <param name="e">
-		/// The e.
-		/// </param>
+		/// <param name="e">The OnResize event e.</param>
 		protected override void OnResize(EventArgs e)
 		{
 			GL.Viewport(0, 0, this.Width, this.Height);
 		}
 
 		/// <summary>
-		/// The on update frame.
+		///   The on update frame.
 		/// </summary>
-		/// <param name="e">
-		/// The e.
-		/// </param>
+		/// <param name="e">The OnUpdateFrame event e.</param>
 		protected override void OnUpdateFrame(FrameEventArgs e)
 		{
 			this.HandleKeyboard();
 		}
 
 		/// <summary>
-		/// The compile shaders.
+		///   The compile shaders.
 		/// </summary>
-		/// <returns>
-		/// The <see cref="int"/>.
-		/// </returns>
+		/// <returns>Returns an int reference number to the created openGL program (shader).</returns>
 		private int CompileShaders()
 		{
 			var vertexShader = GL.CreateShader(ShaderType.VertexShader);
@@ -172,7 +165,7 @@ namespace GameExperiments.OpenTKExample
 		}
 
 		/// <summary>
-		/// The handle keyboard.
+		///   The handle keyboard method.
 		/// </summary>
 		private void HandleKeyboard()
 		{
@@ -185,14 +178,10 @@ namespace GameExperiments.OpenTKExample
 		}
 
 		/// <summary>
-		/// The on closed.
+		///   The on closed event handler. Calling this method exits the form.
 		/// </summary>
-		/// <param name="sender">
-		/// The sender.
-		/// </param>
-		/// <param name="eventArgs">
-		/// The event args.
-		/// </param>
+		/// <param name="sender">The sender object instance.</param>
+		/// <param name="eventArgs">The OnClosed event arguments.</param>
 		private void OnClosed(object sender, EventArgs eventArgs)
 		{
 			this.Exit();
