@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Hinnerup Net">
-//   Copyright 2018
+//   GPL-3.0
 // </copyright>
 // <summary>
 //   Defines the MainWindow type.
