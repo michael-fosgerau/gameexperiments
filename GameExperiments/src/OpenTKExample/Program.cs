@@ -1,13 +1,13 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Hinnerup Net">
-//   Copyright 2018
+//   GPL-3.0
 // </copyright>
 // <summary>
 //   Defines the Program type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace WindowsFormsApp1
+namespace GameExperiments.OpenTKExample
 {
 	using System;
 	using System.Windows.Forms;

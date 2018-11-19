@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace WindowsFormsApp1
+namespace GameExperiments.OpenTKExample
 {
 	using System;
 	using System.IO;

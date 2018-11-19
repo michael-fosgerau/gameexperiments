@@ -1,4 +1,13 @@
-﻿namespace WindowsFormsApp1
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Hinnerup Net">
+//   GPL-3.0
+// </copyright>
+// <summary>
+//   Defines the SplashForm where UI options can be set.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace GameExperiments.OpenTKExample
 {
 	using System;
 	using System.Windows.Forms;
@@ -9,7 +18,7 @@
 	{
 		public SplashForm()
 		{
-			InitializeComponent();
+			this.InitializeComponent();
 		}
 
 		private void button1_Click(object sender, EventArgs e)
