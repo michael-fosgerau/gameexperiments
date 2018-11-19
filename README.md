@@ -6,10 +6,10 @@ Various game experiments - pre-requisite skills needed to make a game
 Todo's - the never ending and incomplete list:
 
 - OpenGL / OpenTK overlay enabling UI elements inputs
- - Text fields
- - Sliders
- - Toggle clicks
- - Etc.
+   - Text fields
+   - Sliders
+   - Toggle clicks
+   - Etc.
 - Add simple geometry to the OpenGL / OpenTK scene
 - Possible to rotate camera / view (mouse movement)
 - Possible to walk in the scene (arrow keys)
