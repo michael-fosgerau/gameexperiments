@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Hinnerup Net">
+// <copyright company="Hinnerup Net A/S">
 //   GPL-3.0
 // </copyright>
 // <summary>
@@ -14,14 +14,25 @@ namespace GameExperiments.OpenTKExample
 
 	using OpenTK;
 
+	/// <summary>
+	///   The splash form.
+	/// </summary>
 	public partial class SplashForm : Form
 	{
+		/// <summary>
+		///   Initializes a new instance of the <see cref="SplashForm"/> class.
+		/// </summary>
 		public SplashForm()
 		{
 			this.InitializeComponent();
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		/// <summary>
+		///   Event handler for button1.
+		/// </summary>
+		/// <param name="sender">The sender.</param>
+		/// <param name="e">The button client event e.</param>
+		private void Button1Click(object sender, EventArgs e)
 		{
 			var width = int.Parse(this.edWidth.Text);
 			var height = int.Parse(this.edHeight.Text);
@@ -35,7 +46,12 @@ namespace GameExperiments.OpenTKExample
 			}
 		}
 
-		private void SplashForm_Shown(object sender, EventArgs e)
+		/// <summary>
+		///   Event handler for when SplashForm is shown.
+		/// </summary>
+		/// <param name="sender">The sender.</param>
+		/// <param name="e">The shown event e.</param>
+		private void SplashFormShown(object sender, EventArgs e)
 		{
 			var myScreen = Screen.FromControl(this);
 			var area = myScreen.Bounds;
@@ -43,7 +59,12 @@ namespace GameExperiments.OpenTKExample
 			this.edHeight.Text = area.Height.ToString();
 		}
 
-		private void cbVsync_CheckedChanged(object sender, EventArgs e)
+		/// <summary>
+		///   Event handler for when the checkbox for vsync is toggled.
+		/// </summary>
+		/// <param name="sender">The sender object instance.</param>
+		/// <param name="e">The checkbox toggle event e.</param>
+		private void CbVsyncCheckedChanged(object sender, EventArgs e)
 		{
 			this.edFps.Enabled = this.cbVsync.Checked;
 		}

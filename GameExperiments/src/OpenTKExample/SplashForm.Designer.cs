@@ -1,14 +1,23 @@
-﻿namespace GameExperiments.OpenTKExample
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Hinnerup Net A/S">
+//   GPL-3.0
+// </copyright>
+// <summary>
+//   Defines the SplashForm design.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace GameExperiments.OpenTKExample
 {
 	partial class SplashForm
 	{
 		/// <summary>
-		/// Required designer variable.
+		///   Required designer variable.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 
 		/// <summary>
-		/// Clean up any resources being used.
+		///   Clean up any resources being used.
 		/// </summary>
 		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 		protected override void Dispose(bool disposing)
@@ -23,8 +32,8 @@
 		#region Windows Form Designer generated code
 
 		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
+		///   Required method for Designer support - do not modify
+		///   the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent()
 		{
@@ -131,7 +140,7 @@
 			this.button1.TabIndex = 8;
 			this.button1.Text = "Start";
 			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// button2
 			// 
@@ -174,7 +183,7 @@
 			this.cbVsync.TabIndex = 12;
 			this.cbVsync.Text = "VSync";
 			this.cbVsync.UseVisualStyleBackColor = true;
-			this.cbVsync.CheckedChanged += new System.EventHandler(this.cbVsync_CheckedChanged);
+			this.cbVsync.CheckedChanged += new System.EventHandler(this.CbVsyncCheckedChanged);
 			// 
 			// SplashForm
 			// 
@@ -197,7 +206,7 @@
 			this.Name = "SplashForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "OpenTKExample demo";
-			this.Shown += new System.EventHandler(this.SplashForm_Shown);
+			this.Shown += new System.EventHandler(this.SplashFormShown);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

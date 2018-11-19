@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Hinnerup Net">
+// <copyright company="Hinnerup Net A/S">
 //   GPL-3.0
 // </copyright>
 // <summary>
